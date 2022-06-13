@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "/dist/sas-exam",
+    "public": "/dist/sas-exam-unito",
     "ignore": [
       "firebase.json",
       "**/.*",

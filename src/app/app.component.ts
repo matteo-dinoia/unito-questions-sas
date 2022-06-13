@@ -13,7 +13,7 @@ interface examRow {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'sas-exam';
+  title = 'sas-exam-unito';
   questions = QUESTIONS;
   results = '';
 
