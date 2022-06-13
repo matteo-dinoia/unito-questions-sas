@@ -1,28 +1,41 @@
-<div class="container">
-
-
-  
-  <div class="results">
-    <div>Punteggio:</div>
-    <div>
-      {{ results }}
+<div class="container fixed-bottom">
+  <div class="mb-3  w-100 bg-dark">
+    <div class="d-flex">
+      <div class="col-md-6">
+        <div class="d-flex px-3 py-2">
+          <button
+            type="button"
+            class="btn"
+            [ngClass]="{ 'btn-primary': !showPoints, 'btn-danger': showPoints }"
+            (click)="showPoints = !showPoints"
+          >
+            {{ showPoints ? "Nascondi Punteggio" : "Mostra Punteggio" }}
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 text-white">
+        <div class="text-end w-100 px-3 py-2" *ngIf="showPoints">
+          <div>Punteggio:</div>
+          <div>{{ results }}</div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="bottoni">
-    <button> mostra Punteggio fisso</button>
+</div>
+
+<div class="container questions-body">
+  <div>
+   <h1> Questionario esami sas </h1>
   </div>
-  <ol class="ol">
-    <li
-      *ngFor="let question of questions; let question_id = index"
-      class="ciaooo"
-    >
-      <div class="poiii">
-        <div class="ciaaaaaa">{{ "Domanda_" + question_id }}</div>
+  <ol class="mx-auto my-2">
+    <li *ngFor="let question of questions; let question_id = index">
+      <div>
+        <div class="question-title">{{ "Domanda_" + question_id }}</div>
         <div class="question">{{ question.question }}</div>
       </div>
-      <div class="aaa">
+      <div>
         <select
-          class="ciao"
+          class="custom-select"
           (change)="selectOption(question_id, $event, question)"
         >
           <option value="">Seleziona un valore</option>
@@ -34,72 +47,3 @@
     </li>
   </ol>
 </div>
-
-<style>
-  .button{
-    display: flex;
-    width: 1005;
-  }
-  .results {
-    position: fixed;
-    left: 2rem;
-    top: 2rem;
-  }
-  .question {
-    font-size: 1rem;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .ol {
-    max-width: 1024px;
-  }
-  .ciaooo {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 1rem;
-    border: solid 1px black;
-    padding: 2%;
-  }
-
-  .ciaaaaaa {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-right: 0.5rem;
-  }
-
-  .ciaooo span {
-    margin-bottom: 1rem;
-  }
-
-  .aaa {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0.3rem;
-  }
-
-  .ciao {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px black;
-    color: black;
-    font-weight: bold;
-    /* font-size: 15pt; */
-    /* padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%; */
-    width: 300px;
-    height: 50px;
-    margin-right: 2rem;
-  }
-
-  input {
-    text-align: center;
-  }
-</style>

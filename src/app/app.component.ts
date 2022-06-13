@@ -18,7 +18,7 @@ export class AppComponent {
   results = '';
 
   exam: examRow[] = [];
-
+  showPoints: boolean = false;
   constructor() {
     this.results = '0 / ' + this.questions.length;
   }
