@@ -1,50 +1,76 @@
 import { Component } from '@angular/core';
 import { QUESTIONS } from './core/const/questions';
 
-interface examRow {
-  id: number;
-  answer: any;
-  selectedOption: any;
-  isCorrect: boolean;
+class examRow {
+  id!: number;
+  answer: string = '';
+  selectedOption: string = '';
+  isCorrect: boolean = false;
+  showCheckValidity: any = {
+    error: false,
+    success: false,
+  };
+
+  constructor(question: any = null) {
+    if (question) {
+      this.id = question.id;
+      this.answer = question.answer;
+    }
+  }
+  update(selectedOption: any) {
+    selectedOption = selectedOption;
+
+    this.selectedOption = selectedOption ? selectedOption : '';
+    this.isCorrect =
+      this.answer.toString().trim() === this.selectedOption.toString().trim();
+    this.showCheckValidity.error = !!this.selectedOption && !this.isCorrect;
+    this.showCheckValidity.success = !!this.selectedOption && this.isCorrect;
+  }
 }
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'sas-exam-unito';
   questions = QUESTIONS;
-  results = '';
-
+  scorePoint: number = 0;
   exam: examRow[] = [];
+
   showPoints: boolean = false;
+  liveReview: boolean = true;
+
   constructor() {
-    this.results = '0 / ' + this.questions.length;
+    this.initExam();
   }
-  selectOption(question_id: number, selectedOption: any, question: any) {
-    selectedOption = selectedOption.target.value.toString().trim();
-    const answer = question.answer.toString().trim();
-    console.log(selectedOption, answer, selectedOption === answer);
-    const isCorrect = !!(selectedOption === answer);
 
-    if (this.exam && this.exam.length && this.exam.some((k) => k.id === question_id)) {
-      
-        this.exam.forEach((ex) => {
-          if (ex.id === question_id) {
-            ex.selectedOption = selectedOption;
-            ex.isCorrect = isCorrect;
-          }
-        });
-      
-    } else {
-      this.exam.push({ id: question_id, answer, selectedOption, isCorrect });
+  ngOnit() {}
+
+  private initExam() {
+    this.questions.forEach((question) => {
+      this.exam.push(new examRow(question));
+    });
+  }
+
+  selectOption(selectedOption: any, question: any) {
+    selectedOption = selectedOption.target.value;
+
+    const questionIndex = this.exam.findIndex((k) => k.id === question.id);
+    if(questionIndex !== -1) {
+      this.exam[questionIndex].update(selectedOption);
     }
-    console.log(this.exam)
-    console.log(this.exam.filter((k) => k.isCorrect))
+    this.setScorePoint();
+  }
 
-    const successAnswer = this.exam.filter((k) => k.isCorrect).length;
-    this.results = successAnswer + ' / ' + this.questions.length;
-    console.log(this.results, successAnswer);
+  resetExam(){
+    this.exam = [];
+    this.scorePoint = 0;
+    this.initExam();
+  }
+
+  private setScorePoint() {
+    const successCases = this.exam.filter((k) => k.isCorrect).length;
+    this.scorePoint = successCases ? successCases : 0;
   }
 }

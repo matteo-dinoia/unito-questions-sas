@@ -1,22 +1,66 @@
 <div class="container fixed-bottom">
-  <div class="mb-3  w-100 bg-dark">
-    <div class="d-flex">
+  <div class="mb-3 w-100 bg-dark">
+    <div class="d-flex justify-content-between align-items-center">
       <div class="col-md-6">
-        <div class="d-flex px-3 py-2">
-          <button
-            type="button"
-            class="btn"
-            [ngClass]="{ 'btn-primary': !showPoints, 'btn-danger': showPoints }"
-            (click)="showPoints = !showPoints"
+        <div class="d-flex px-3 py-2 justify-content-start align-items-center">
+          <div
+            class="d-flex flex-column align-items-start justify-content-between"
           >
-            {{ showPoints ? "Nascondi Punteggio" : "Mostra Punteggio" }}
-          </button>
+            <mat-slide-toggle
+              color="success"
+              [(ngModel)]="showPoints"
+              (toggleChange)="showPoints = !showPoints"
+              class="d-flex justify-content-center align-items-center mx-3 my-1"
+            >
+              <div class="d-flex justify-content-center align-items-center">
+                <span class="text-white my-auto mx-2"> Punteggio Totale </span>
+                <span
+                  class="fw-bold"
+                  [ngClass]="{
+                    'text-success': showPoints,
+                    'text-danger': !showPoints
+                  }"
+                >
+                  {{ showPoints ? "ON" : "FALSE" }}</span
+                >
+              </div>
+            </mat-slide-toggle>
+            <mat-slide-toggle
+              color="success"
+              [(ngModel)]="liveReview"
+              (toggleChange)="liveReview = !liveReview"
+              class="d-flex justify-content-center align-items-center mx-3"
+            >
+              <span class="text-white my-auto mx-2"> Correzione LIVE </span>
+              <span
+                class="fw-bold"
+                [ngClass]="{
+                  'text-success': liveReview,
+                  'text-danger': !liveReview
+                }"
+              >
+                {{ liveReview ? "ON" : "FALSE" }}</span
+              >
+            </mat-slide-toggle>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 text-white">
+
+      <div class="col-md-2 text-white">
+        <button
+          (click)="resetExam()"
+          mat-fab
+          color="primary"
+          aria-label="Example icon button with a delete icon"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+
+      <div class="col-md-4 text-white">
         <div class="text-end w-100 px-3 py-2" *ngIf="showPoints">
-          <div>Punteggio:</div>
-          <div>{{ results }}</div>
+          <div class="fw-bold">Punteggio:</div>
+          <div>{{ scorePoint + "/ " + this.questions.length }}</div>
         </div>
       </div>
     </div>
@@ -25,24 +69,55 @@
 
 <div class="container questions-body">
   <div>
-   <h1> Questionario esami sas </h1>
+    <h1>Questionario esami sas</h1>
   </div>
+  <div></div>
   <ol class="mx-auto my-2">
     <li *ngFor="let question of questions; let question_id = index">
+      <hr />
       <div>
-        <div class="question-title">{{ "Domanda_" + question_id }}</div>
+        <div class="question-title">{{ "Domanda #" + (question_id + 1) }}</div>
         <div class="question">{{ question.question }}</div>
       </div>
-      <div>
-        <select
-          class="custom-select"
-          (change)="selectOption(question_id, $event, question)"
-        >
-          <option value="">Seleziona un valore</option>
-          <option [value]="b" *ngFor="let b of question.options">
-            {{ b | uppercase }}
-          </option>
-        </select>
+      <div class="d-flex justify-content-start align-items-center">
+        <div>
+          <select class="my-2" (change)="selectOption($event, question)">
+            <option value="">Seleziona un valore</option>
+            <option [value]="b" *ngFor="let b of question.options">
+              {{ b | uppercase }}
+            </option>
+          </select>
+        </div>
+        <div class="live-review" *ngIf="liveReview">
+          <div
+            class="text-success d-flex justify-content-center align-items-center"
+            *ngIf="exam[question.id].showCheckValidity.success"
+          >
+            <div>
+              <img
+                class="mx-3"
+                src="../assets/img/icon/thumb_up.png"
+                height="24"
+                alt="thumb_up"
+              />
+            </div>
+            <div class="fw-bold mx-2">CORRETTO !</div>
+          </div>
+          <div
+            class="text-danger d-flex justify-content-center align-items-center"
+            *ngIf="exam[question.id].showCheckValidity.error"
+          >
+            <div>
+              <img
+                class="mx-3"
+                src="../assets/img/icon/thumb_down.png"
+                height="24"
+                alt="thumb_down"
+              />
+            </div>
+            <div class="fw-bold mx-2">ERRORE ! Riprova</div>
+          </div>
+        </div>
       </div>
     </li>
   </ol>
