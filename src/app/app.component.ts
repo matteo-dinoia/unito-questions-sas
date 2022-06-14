@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { examRow, Question } from './core/const/models/question.model';
-import { QUESTIONS } from './core/const/questions';
+import { QUESTIONS } from './core/consts/mocks/questions.const';
+import { examRow, Question } from './core/models/question.model';
+
 
 @Component({
   selector: 'app-root',

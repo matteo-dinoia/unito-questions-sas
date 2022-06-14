@@ -1,4 +1,4 @@
-import { Question } from "./models/question.model";
+import { Question } from "../../models/question.model";
 
 export const QUESTIONS:Question[] = [
   {
@@ -242,25 +242,25 @@ export const QUESTIONS:Question[] = [
   },
   {
     id: 37,
-    question: 'È per sua natura unidirezionale',
+    question: "L'associazione nel modello di dominio è per sua natura unidirezionale",
     answer: false,
     options: ['true', 'false'],
   },
   {
     id: 38,
-    question: 'Il modello di dominio rappresenta una relazione significativa tra classi',
+    question: "L'associazione nel modello di dominio rappresenta una relazione significativa tra classi",
     answer: true,
     options: ['true', 'false'],
   },
   {
     id: 39,
-    question: 'Rappresenta un valore logico degli oggetti di una classe',
+    question: "L'associazione nel modello di dominio rappresenta un valore logico degli oggetti di una classe",
     answer: false,
     options: ['true', 'false'],
   },
   {
     id: 40,
-    question: 'le associazioni nel modello di dominio rappresentano un’insieme di n-tuple di oggetti delle classi',
+    question: "L'associazione nel modello di dominio rappresenta un’insieme di n-tuple di oggetti delle classi",
     answer: true,
     options: ['true', 'false'],
   },
