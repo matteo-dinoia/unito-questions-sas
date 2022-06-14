@@ -635,7 +635,7 @@ export const QUESTIONS: Question[] = [
     id: 94,
     question:
       'Il refactoring è una pratica promossa dal metodo iterativo e agile xp',
-    answer: false,
+    answer: true,
     options: ['true', 'false'],
   },
   {
