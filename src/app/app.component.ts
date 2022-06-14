@@ -20,9 +20,7 @@ export class AppComponent {
   }
 
   private initExam() {
-    this.questions.forEach((question) => {
-      this.exam.push(new examRow(question));
-    });
+    this.questions.forEach((question) => this.exam.push(new examRow(question)));
   }
 
   private updateExamRow(selectedOption: any, question: Question) {
