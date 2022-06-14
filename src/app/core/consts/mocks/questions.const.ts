@@ -2,34 +2,6 @@ import { Question } from '../../models/question.model';
 
 export const QUESTIONS: Question[] = [
   {
-    id: 0,
-    question:
-      "Un caso d'uso rappresenta una maniera di utilizzare il sistema da parte di un utente per raggiungere un suo obbiettivo",
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 1,
-    question:
-      "I requisiti funzionali non catturati dai casi d'uso vengono descritti nelle specifiche supplementari",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 2,
-    question:
-      "Un caso d'uso rappresenta l'insieme di funzionalità di un sistema",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 3,
-    question:
-      "I requisiti non funzionali sono descritti completamente dai casi d'uso",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
     id: 4,
     question:
       "In UP, la disciplina dei requisiti ha l'obbiettivo di produrre una lista dei requisiti, capire il contesto del sistema, catturare i requisiti funzionali e i requisiti non-funzionali",
@@ -43,13 +15,7 @@ export const QUESTIONS: Question[] = [
     answer: false,
     options: ['true', 'false'],
   },
-  {
-    id: 6,
-    question:
-      "L'analisi linguistica dei casi d'uso nel formato dettagliato è una fonte di ispirazione per la costruzione del modello di dominio",
-    answer: true,
-    options: ['true', 'false'],
-  },
+
   {
     id: 7,
     question:
@@ -57,166 +23,11 @@ export const QUESTIONS: Question[] = [
     answer: true,
     options: ['true', 'false'],
   },
-  {
-    id: 8,
-    question:
-      "Il modello di dominio riporta i concetti significativi relativi ai casi d'uso",
-    answer: true,
-    options: ['true', 'false'],
-  },
+
   {
     id: 9,
     question:
       'Il modello di dominio è una rappresentazione testuale delle classi concettuali, oggetti reali del dominio',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 10,
-    question:
-      'I pattern GoF incentivano i meccanismi di riuso del software attraverso la definizione di gerarchie di classi',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 11,
-    question:
-      'La composizione di oggetti è definita staticamente attraverso la specifica delle classi e delle associazioni',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 12,
-    question:
-      'Il meccanismo di specializzazione per il riuso del codice è detto white-box',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 13,
-    question:
-      "La modifica dell'interfaccia di una classe ha in generale un basso impatto nelle sottoclassi",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 14,
-    question:
-      "I pattern GoF prediligono l'utilizzo del meccanismo di ereditarietà per ottenere la specializzazione",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 16,
-    question:
-      'I pattern GRASP sono espressi in termini di responsabilità, ruoli e collaborazioni',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 17,
-    question:
-      "La decisione sull'assegnazione delle responsabilità precede sempre la codifica",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 18,
-    question:
-      "L'utilizzo dei pattern GRASP è svolto all'interno della disciplina dei requisiti di UP",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 19,
-    question: 'Le responsabilità sono assegnate alle classi durante la OOD',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 20,
-    question:
-      "L'analisi linguistica dei casi d'uso nel formato dettagliato è una fonte di ispirazione per la costruzione del modello di dominio",
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 21,
-    question:
-      'Il modello di dominio è una rappresentazione testuale delle classi concettuali, oggetti reali del dominio',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 22,
-    question:
-      'Il modello di dominio è un dizionario visuale delle classi concettuali',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 24,
-    question:
-      'Il meccanismo di delega è preferibile al meccanismo di specializzazione per il riuso del codice',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 25,
-    question:
-      "I pattern GoF prediligono l'utilizzo del meccanismo di ereditarietà per ottenere il polimorfismo",
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 26,
-    question: 'L’ereditarietà rispetta l’incapsulamento',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 27,
-    question:
-      'I pattern GoF incentivano l’uso dell’ereditarietà come meccanismo di riuso del codice, in particolare attraverso il pattern composite',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 28,
-    question:
-      'La composizione di oggetti è un meccanismo di riuso del codice detto black-box',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 29,
-    question:
-      'Un metodo di una classe software rappresenta una responsabilità “a fare” per le istanze di tale classe',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 31,
-    question:
-      'In UP i casi d’uso vengono utilizzati per catturare i requisiti funzionali nella disciplina dei requisiti',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 32,
-    question: 'I casi d’uso sono caratteristiche del sistema',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 33,
-    question: 'I casi d’uso sono utilizzati per pianificare le iterazioni',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 34,
-    question: 'In UP i casi d’uso sono descritti mediante il linguaggio UML',
     answer: false,
     options: ['true', 'false'],
   },
@@ -263,6 +74,365 @@ export const QUESTIONS: Question[] = [
     answer: true,
     options: ['true', 'false'],
   },
+
+  {
+    id: 21,
+    question:
+      'Il modello di dominio è una rappresentazione testuale delle classi concettuali, oggetti reali del dominio',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 22,
+    question:
+      'Il modello di dominio è un dizionario visuale delle classi concettuali',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 64,
+    question:
+      'il MODELLO DI DOMINIO: Insieme di diagrammi di classi UML che includono associazioni tra classi software',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 65,
+    question:
+      'il MODELLO DI DOMINIO: Rappresentazione grafica degli oggetti software',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 66,
+    question:
+      'il MODELLO DI DOMINIO: Rappresentazione visuale delle classi concettuali',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 67,
+    question:
+      'il MODELLO DI DOMINIO: Insieme di diagrammi di classi UML che includono associazioni tra classi concettuali',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 68,
+    question:
+      'il MODELLO DI DOMINIO: Rappresentazione visuale delle classi JAVA',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 69,
+    question:
+      'il MODELLO DI DOMINIO: Insieme di diagrammi di classi UML che includono le responsabilità di fare',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 0,
+    question:
+      "Un caso d'uso rappresenta una maniera di utilizzare il sistema da parte di un utente per raggiungere un suo obbiettivo",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 97,
+    question:
+      'La narrativa di un caso d’uso viene espressa a livello delle intenzioni dell’utente e della responsabilità del sistema',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 98,
+    question:
+      'La narrativa di un caso d’uso viene espressa a livello delle azioni concrete dell’utente e delle responsabilità del sistema',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 99,
+    question:
+      'Un caso d’uso è sempre completato (implementato) in una solo iterazione',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 2,
+    question:
+      "Un caso d'uso rappresenta l'insieme di funzionalità di un sistema",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 1,
+    question:
+      "I requisiti funzionali non catturati dai casi d'uso vengono descritti nelle specifiche supplementari",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 6,
+    question:
+      "L'analisi linguistica dei casi d'uso nel formato dettagliato è una fonte di ispirazione per la costruzione del modello di dominio",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 8,
+    question:
+      "Il modello di dominio riporta i concetti significativi relativi ai casi d'uso",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 20,
+    question:
+      "L'analisi linguistica dei casi d'uso nel formato dettagliato è una fonte di ispirazione per la costruzione del modello di dominio",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 3,
+    question:
+      "I requisiti non funzionali sono descritti completamente dai casi d'uso",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 112,
+    question:
+      'I contratti sono considerati parte del modello dei casi d’uso poiché forniscono maggiori dettagli dell’analisi, sull’effetto delle operazioni di sistema implicate dai casi d’uso',
+    answer: true,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 114,
+    question:
+      'I CASI D’USO Sono una collezione di soli scenari di successo che descrivono un attore che usa il sistema per raggiungere un obbiettivo specifico',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 115,
+    question:
+      'I casi d’uso sono descrizioni testuali di scenari di uso interessanti del sistema software che si deve realizzare',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 116,
+    question: 'I casi d’uso servono a catturare i requisiti funzionali',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 31,
+    question:
+      'In UP i casi d’uso vengono utilizzati per catturare i requisiti funzionali nella disciplina dei requisiti',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 32,
+    question: 'I casi d’uso sono caratteristiche del sistema',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 33,
+    question: 'I casi d’uso sono utilizzati per pianificare le iterazioni',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 34,
+    question: 'In UP i casi d’uso sono descritti mediante il linguaggio UML',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 43,
+    question:
+      'DURANTE LA FASE DI ELABORAZIONE Si scrivono circa il 10% dei casi d’uso tra i più critici in formato dettagliato utilizzando template appositi',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 56,
+    question:
+      'In percentuale sul totale di casi d’uso complessivi di un progetto, quanti sono quelli che dovrebbero essere realizzati entro la conclusione della fase di ideazione??',
+    answer: '5%',
+    options: ['5%', '50%', '70%', '100%'],
+  },
+
+  {
+    id: 59,
+    question: 'I casi d’uso mettono in risalto gli obbiettivi degli utenti',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 60,
+    question:
+      'I casi d’uso sono utilizzati per la scoperta e la definizione dei requisiti non funzionali',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 61,
+    question:
+      'I casi d’uso sono utilizzati per la scoperta e la definizione dei requisiti funzionali',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 62,
+    question: 'I casi d’uso mettono in risalto gli obbiettivi del sistema',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 63,
+    question:
+      'I casi d’uso sono utilizzati solo nelle prime iterazioni di sviluppo',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 109,
+    question:
+      'Il principale input per la redazione dei contratti sono le operazioni di sistema e il modello di dominio',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 75,
+    question:
+      'Le post-condizioni descrivono i cambiamenti di stato degli oggetti nel modello di dominio dopo il completamento dell’operazione',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 77,
+    question: 'I contratti servono come input per il modello di dominio',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 105,
+    question:
+      'La responsabilità sono assegnate ai concetti definiti nel modello di dominio',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 78,
+    question:
+      'I contratti delle operazioni di sistema usano pre e post- condizioni per descrivere nel dettaglio i cambiamenti agli oggetti (concettuali) in un modello di dominio',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 111,
+    question: 'I contratti servono come input per il modello di dominio',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 113,
+    question:
+      'Le pre-condizioni descrivono i cambiamenti di stato degli oggetti nel modello di dominio dopo il completamento dell’operazione',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 11,
+    question:
+      'La composizione di oggetti è definita staticamente attraverso la specifica delle classi e delle associazioni',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 12,
+    question:
+      'Il meccanismo di specializzazione per il riuso del codice è detto white-box',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 13,
+    question:
+      "La modifica dell'interfaccia di una classe ha in generale un basso impatto nelle sottoclassi",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 16,
+    question:
+      'I pattern GRASP sono espressi in termini di responsabilità, ruoli e collaborazioni',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 17,
+    question:
+      "La decisione sull'assegnazione delle responsabilità precede sempre la codifica",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 18,
+    question:
+      "L'utilizzo dei pattern GRASP è svolto all'interno della disciplina dei requisiti di UP",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 19,
+    question: 'Le responsabilità sono assegnate alle classi durante la OOD',
+    answer: true,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 24,
+    question:
+      'Il meccanismo di delega è preferibile al meccanismo di specializzazione per il riuso del codice',
+    answer: true,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 26,
+    question: 'L’ereditarietà rispetta l’incapsulamento',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 28,
+    question:
+      'La composizione di oggetti è un meccanismo di riuso del codice detto black-box',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 29,
+    question:
+      'Un metodo di una classe software rappresenta una responsabilità “a fare” per le istanze di tale classe',
+    answer: true,
+    options: ['true', 'false'],
+  },
+
   {
     id: 41,
     question:
@@ -273,13 +443,6 @@ export const QUESTIONS: Question[] = [
   {
     id: 42,
     question: 'DURANTE LA FASE DI ELABORAZIONE Non si sviluppa codice',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 43,
-    question:
-      'DURANTE LA FASE DI ELABORAZIONE Si scrivono circa il 10% dei casi d’uso tra i più critici in formato dettagliato utilizzando template appositi',
     answer: false,
     options: ['true', 'false'],
   },
@@ -366,13 +529,7 @@ export const QUESTIONS: Question[] = [
     answer: true,
     options: ['true', 'false'],
   },
-  {
-    id: 56,
-    question:
-      'In percentuale sul totale di casi d’uso complessivi di un progetto, quanti sono quelli che dovrebbero essere realizzati entro la conclusione della fase di ideazione??',
-    answer: '5%',
-    options: ['5%', '50%', '70%', '100%'],
-  },
+
   {
     id: 57,
     question:
@@ -387,81 +544,7 @@ export const QUESTIONS: Question[] = [
     answer: '100%',
     options: ['5%', '50%', '70%', '100%'],
   },
-  {
-    id: 59,
-    question: 'I casi d’uso mettono in risalto gli obbiettivi degli utenti',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 60,
-    question:
-      'I casi d’uso sono utilizzati per la scoperta e la definizione dei requisiti non funzionali',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 61,
-    question:
-      'I casi d’uso sono utilizzati per la scoperta e la definizione dei requisiti funzionali',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 62,
-    question: 'I casi d’uso mettono in risalto gli obbiettivi del sistema',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 63,
-    question:
-      'I casi d’uso sono utilizzati solo nelle prime iterazioni di sviluppo',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 64,
-    question:
-      'il MODELLO DI DOMINIO: Insieme di diagrammi di classi UML che includono associazioni tra classi software',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 65,
-    question:
-      'il MODELLO DI DOMINIO: Rappresentazione grafica degli oggetti software',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 66,
-    question:
-      'il MODELLO DI DOMINIO: Rappresentazione visuale delle classi concettuali',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 67,
-    question:
-      'il MODELLO DI DOMINIO: Insieme di diagrammi di classi UML che includono associazioni tra classi concettuali',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 68,
-    question:
-      'il MODELLO DI DOMINIO: Rappresentazione visuale delle classi JAVA',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 69,
-    question:
-      'il MODELLO DI DOMINIO: Insieme di diagrammi di classi UML che includono le responsabilità di fare',
-    answer: false,
-    options: ['true', 'false'],
-  },
+
   {
     id: 70,
     question: 'Il riuso white-box è preferibile al riuso black-box',
@@ -494,13 +577,7 @@ export const QUESTIONS: Question[] = [
     answer: false,
     options: ['true', 'false'],
   },
-  {
-    id: 75,
-    question:
-      'Le post-condizioni descrivono i cambiamenti di stato degli oggetti nel modello di dominio dopo il completamento dell’operazione',
-    answer: true,
-    options: ['true', 'false'],
-  },
+
   {
     id: 76,
     question:
@@ -509,15 +586,31 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
-    id: 77,
-    question: 'I contratti servono come input per il modello di dominio',
+    id: 27,
+    question:
+      'I pattern GoF incentivano l’uso dell’ereditarietà come meccanismo di riuso del codice, in particolare attraverso il pattern composite',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 14,
+    question:
+      "I pattern GoF prediligono l'utilizzo del meccanismo di ereditarietà per ottenere la specializzazione",
     answer: false,
     options: ['true', 'false'],
   },
   {
-    id: 78,
+    id: 10,
     question:
-      'I contratti delle operazioni di sistema usano pre e post- condizioni per descrivere nel dettaglio i cambiamenti agli oggetti (concettuali) in un modello di dominio',
+      'I pattern GoF incentivano i meccanismi di riuso del software attraverso la definizione di gerarchie di classi',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 25,
+    question:
+      "I pattern GoF prediligono l'utilizzo del meccanismo di ereditarietà per ottenere il polimorfismo",
     answer: true,
     options: ['true', 'false'],
   },
@@ -646,27 +739,7 @@ export const QUESTIONS: Question[] = [
     answer: true,
     options: ['true', 'false'],
   },
-  {
-    id: 97,
-    question:
-      'La narrativa di un caso d’uso viene espressa a livello delle intenzioni dell’utente e della responsabilità del sistema',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 98,
-    question:
-      'La narrativa di un caso d’uso viene espressa a livello delle azioni concrete dell’utente e delle responsabilità del sistema',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 99,
-    question:
-      'Un caso d’uso è sempre completato (implementato) in una solo iterazione',
-    answer: false,
-    options: ['true', 'false'],
-  },
+
   {
     id: 100,
     question:
@@ -702,13 +775,7 @@ export const QUESTIONS: Question[] = [
     answer: true,
     options: ['true', 'false'],
   },
-  {
-    id: 105,
-    question:
-      'La responsabilità sono assegnate ai concetti definiti nel modello di dominio',
-    answer: false,
-    options: ['true', 'false'],
-  },
+
   {
     id: 106,
     question:
@@ -731,59 +798,13 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
-    id: 109,
-    question:
-      'Il principale input per la redazione dei contratti sono le operazioni di sistema e il modello di dominio',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
     id: 110,
     question:
       'I contratti usano precondizioni e post-condizioni per descrivere nel dettaglio i cambiamenti agli oggetti in un modello di progetto (software)',
     answer: false,
     options: ['true', 'false'],
   },
-  {
-    id: 111,
-    question: 'I contratti servono come input per il modello di dominio',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 112,
-    question:
-      'I contratti sono considerati parte del modello dei casi d’uso poiché forniscono maggiori dettagli dell’analisi, sull’effetto delle operazioni di sistema implicate dai casi d’uso',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 113,
-    question:
-      'Le pre-condizioni descrivono i cambiamenti di stato degli oggetti nel modello di dominio dopo il completamento dell’operazione',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 114,
-    question:
-      'I CASI D’USO Sono una collezione di soli scenari di successo che descrivono un attore che usa il sistema per raggiungere un obbiettivo specifico',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 115,
-    question:
-      'I casi d’uso sono descrizioni testuali di scenari di uso interessanti del sistema software che si deve realizzare',
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 116,
-    question: 'I casi d’uso servono a catturare i requisiti funzionali',
-    answer: true,
-    options: ['true', 'false'],
-  },
+
   {
     id: 117,
     question: 'Si consideri la seguente associazione R tra a e B:',
@@ -879,7 +900,8 @@ export const QUESTIONS: Question[] = [
       'Una istanza di SalesLineItem pu`o essere creata dopo un’istanza di Sale.',
     imgName: 'question_121_to_126.png',
     answer: true,
-    answer_reason: 'per quanto detto in precedenza sulla composizione (domanda 122)',
+    answer_reason:
+      'per quanto detto in precedenza sulla composizione (domanda 122)',
 
     options: ['true', 'false'],
   },
@@ -890,7 +912,8 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Una istanza di Sale pu`o essere creata dopo un’istanza di SalesLineItem.',
     imgName: 'question_121_to_126.png',
-    answer_reason: 'per quanto detto in precedenza sulla composizione (domanda 122)',
+    answer_reason:
+      'per quanto detto in precedenza sulla composizione (domanda 122)',
     answer: false,
     options: ['true', 'false'],
   },
@@ -901,7 +924,8 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d2), (c2, d3), (c2, d4)}.',
     imgName: 'question_127_to_130.png',
-    answer_reason: 'd2 è associato a 2 elementi di c (c1 e c2) e questo non va bene perché dev’essere associato solo ad un elemento di c per la cardinalità dell’associazione (1 --- 1..*)',
+    answer_reason:
+      'd2 è associato a 2 elementi di c (c1 e c2) e questo non va bene perché dev’essere associato solo ad un elemento di c per la cardinalità dell’associazione (1 --- 1..*)',
     answer: false,
     options: ['true', 'false'],
   },
@@ -912,7 +936,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c2, d4)}.',
     imgName: 'question_127_to_130.png',
-    answer_reason:'vengono rispettate le cardinalità',
+    answer_reason: 'vengono rispettate le cardinalità',
     answer: true,
     options: ['true', 'false'],
   },
@@ -920,8 +944,7 @@ export const QUESTIONS: Question[] = [
     id: 129,
     question:
       'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
-    subQuestion:
-      'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d3)}.',
+    subQuestion: 'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d3)}.',
     imgName: 'question_127_to_130.png',
     answer_reason: 'perché d3 non è associato a nessun elemento di c',
     answer: false,
@@ -929,8 +952,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 130,
-    question:
-      'Si consideri il seguente Modello di Dominio: ',
+    question: 'Si consideri il seguente Modello di Dominio: ',
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c1, d4)}.',
     imgName: 'question_127_to_130.png',
@@ -942,10 +964,10 @@ export const QUESTIONS: Question[] = [
     id: 131,
     question:
       'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
-    subQuestion:
-      'R pu`o essere {(b1, a1), (b1, a2), (b2, a1)}.',
+    subQuestion: 'R pu`o essere {(b1, a1), (b1, a2), (b2, a1)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason: 'perché a1 è associato a 2 elementi di b, quando invece la cardinalità è (0..1). ',
+    answer_reason:
+      'perché a1 è associato a 2 elementi di b, quando invece la cardinalità è (0..1). ',
     answer: false,
     options: ['true', 'false'],
   },
@@ -953,10 +975,10 @@ export const QUESTIONS: Question[] = [
     id: 132,
     question:
       'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
-    subQuestion:
-      'R pu`o essere {(b1, a1), (b1, a2), (b1, a3)}.',
+    subQuestion: 'R pu`o essere {(b1, a1), (b1, a2), (b1, a3)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason: 'perché b2 non è associato a nessun elemento di a, quando invece la cardinalità è (1..3)',
+    answer_reason:
+      'perché b2 non è associato a nessun elemento di a, quando invece la cardinalità è (1..3)',
     answer: false,
     options: ['true', 'false'],
   },
@@ -967,7 +989,8 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'R pu`o essere {(b1, a1), (b1, a2), (b1, a3), (b1, a4), (b2, a3)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason: 'perché a3 è associato a 2 elementi di b, quando invece la cardinalità è (0..1)',
+    answer_reason:
+      'perché a3 è associato a 2 elementi di b, quando invece la cardinalità è (0..1)',
     answer: false,
     options: ['true', 'false'],
   },
@@ -975,8 +998,7 @@ export const QUESTIONS: Question[] = [
     id: 134,
     question:
       'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
-    subQuestion:
-      'R pu`o essere {(b1, a1), (b1, a2), (b2, a3), (b2, a4)}.',
+    subQuestion: 'R pu`o essere {(b1, a1), (b1, a2), (b2, a3), (b2, a4)}.',
     imgName: 'question_131_to_134.png',
     answer_reason: 'tutto ok, le cardinalità sono rispettate',
     answer: true,
