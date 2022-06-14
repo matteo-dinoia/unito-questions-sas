@@ -246,7 +246,7 @@ export const QUESTIONS = [
   },
   {
     id: 38,
-    question: 'Rappresenta una relazione significativa tra classi',
+    question: 'Il modello di dominio rappresenta una relazione significativa tra classi',
     answer: true,
     options: ['true', 'false'],
   },

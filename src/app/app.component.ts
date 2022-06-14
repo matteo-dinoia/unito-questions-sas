@@ -56,14 +56,16 @@ export class AppComponent {
   selectOption(selectedOption: any, question: any) {
     selectedOption = selectedOption.target.value;
 
-    const questionIndex = this.exam.findIndex((k) => k.id === question.id);
-    if(questionIndex !== -1) {
-      this.exam[questionIndex].update(selectedOption);
+    const questionIndex = this.exam.find((k) => k.id === question.id);
+    if (questionIndex) {
+      this.exam.forEach((exam) => {
+        if (exam.id === questionIndex.id) exam.update(selectedOption);
+      });
     }
     this.setScorePoint();
   }
 
-  resetExam(){
+  resetExam() {
     this.exam = [];
     this.scorePoint = 0;
     this.initExam();
