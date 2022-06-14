@@ -105,13 +105,6 @@ export const QUESTIONS = [
     options: ['true', 'false'],
   },
   {
-    id: 15,
-    question:
-      "Un metodo di una classe software rappresenta una responsabilità 'a Fare' per le istanze di tale classe",
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
     id: 16,
     question:
       'I pattern GRASP sono espressi in termini di responsabilità, ruoli e collaborazioni',
@@ -208,13 +201,6 @@ export const QUESTIONS = [
     options: ['true', 'false'],
   },
   {
-    id: 30,
-    question:
-      'La decisione sull’assegnazione delle responsabilità precede sempre la codifica',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
     id: 31,
     question:
       'In UP i casi d’uso vengono utilizzati per catturare i requisiti funzionali nella disciplina dei requisiti',
@@ -248,7 +234,7 @@ export const QUESTIONS = [
   },
   {
     id: 36,
-    question: 'La direzione di lettura va sempre specificata',
+    question: 'Nelle associazioni nel modello di dominio la direzione di lettura va sempre specificata',
     answer: false,
     options: ['true', 'false'],
   },
@@ -272,7 +258,7 @@ export const QUESTIONS = [
   },
   {
     id: 40,
-    question: 'Rappresenta un’insieme di n-tuple di oggetti delle classi',
+    question: 'le associazioni nel modello di dominio rappresentano un’insieme di n-tuple di oggetti delle classi',
     answer: true,
     options: ['true', 'false'],
   },
@@ -374,7 +360,7 @@ export const QUESTIONS = [
   },
   {
     id: 55,
-    question: 'Mostrano gli eventi generati dagli attori esterni al sistema',
+    question: 'Gli SSD mostrano gli eventi generati dagli attori esterni al sistema',
     answer: true,
     options: ['true', 'false'],
   },
@@ -383,21 +369,21 @@ export const QUESTIONS = [
     question:
       'In percentuale sul totale di casi d’uso complessivi di un progetto, quanti sono quelli che dovrebbero essere realizzati entro la conclusione della fase di ideazione??',
     answer: '5%',
-    options: ['true', 'false'],
+    options: ['5%', '50%', '70%', '100%'],
   },
   {
     id: 57,
     question:
       'In percentuale sul totale dei requisiti funzionali di un progetto, quanti sono quelli che dovrebbero essere identificati entro la conclusione della fase di ideazione?? 50%',
     answer: '70%',
-    options: ['10%', '50%', '70%', '100%'],
+    options: ['5%', '50%', '70%', '100%'],
   },
   {
     id: 58,
     question:
       'In percentuale sul totale dei requisiti funzionali di un progetto, quanti sono quelli che dovrebbero essere identificati entro la conclusione della fase di elaborazione?? Quasi',
     answer: '100%',
-    options: ['10%', '50%', '70%', '100%'],
+    options: ['5%', '50%', '70%', '100%'],
   },
   {
     id: 59,
@@ -648,7 +634,7 @@ export const QUESTIONS = [
     id: 95,
     question:
       'Il refactoring prevede lo sviluppo guidato dai test, ovvero uno sviluppo preceduto dai test',
-    answer: true,
+    answer: false,
     options: ['true', 'false'],
   },
   {
@@ -752,7 +738,7 @@ export const QUESTIONS = [
   {
     id: 110,
     question:
-      'Usano precondizioni e post-condizioni per descrivere nel dettaglio i cambiamenti agli oggetti in un modello di progetto (software)',
+      'I contratti usano precondizioni e post-condizioni per descrivere nel dettaglio i cambiamenti agli oggetti in un modello di progetto (software)',
     answer: false,
     options: ['true', 'false'],
   },
@@ -765,7 +751,7 @@ export const QUESTIONS = [
   {
     id: 112,
     question:
-      'Sono considerati parte del modello dei casi d’uso poiché forniscono maggiori dettagli dell’analisi, sull’effetto delle operazioni di sistema implicate dai casi d’uso',
+      'I contratti sono considerati parte del modello dei casi d’uso poiché forniscono maggiori dettagli dell’analisi, sull’effetto delle operazioni di sistema implicate dai casi d’uso',
     answer: true,
     options: ['true', 'false'],
   },
