@@ -1,4 +1,6 @@
-export const QUESTIONS = [
+import { Question } from "./models/question.model";
+
+export const QUESTIONS:Question[] = [
   {
     id: 0,
     question:
