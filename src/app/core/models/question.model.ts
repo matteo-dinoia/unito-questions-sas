@@ -3,6 +3,8 @@ export interface Question {
   question: string;
   answer: boolean | string;
   options: string[];
+  imgName?: string;
+  subQuestion?: string
 }
 
 export class examRow {

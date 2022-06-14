@@ -1,6 +1,6 @@
-import { Question } from "../../models/question.model";
+import { Question } from '../../models/question.model';
 
-export const QUESTIONS:Question[] = [
+export const QUESTIONS: Question[] = [
   {
     id: 0,
     question:
@@ -236,31 +236,36 @@ export const QUESTIONS:Question[] = [
   },
   {
     id: 36,
-    question: 'Nelle associazioni nel modello di dominio la direzione di lettura va sempre specificata',
+    question:
+      'Nelle associazioni nel modello di dominio la direzione di lettura va sempre specificata',
     answer: false,
     options: ['true', 'false'],
   },
   {
     id: 37,
-    question: "L'associazione nel modello di dominio è per sua natura unidirezionale",
+    question:
+      "L'associazione nel modello di dominio è per sua natura unidirezionale",
     answer: false,
     options: ['true', 'false'],
   },
   {
     id: 38,
-    question: "L'associazione nel modello di dominio rappresenta una relazione significativa tra classi",
+    question:
+      "L'associazione nel modello di dominio rappresenta una relazione significativa tra classi",
     answer: true,
     options: ['true', 'false'],
   },
   {
     id: 39,
-    question: "L'associazione nel modello di dominio rappresenta un valore logico degli oggetti di una classe",
+    question:
+      "L'associazione nel modello di dominio rappresenta un valore logico degli oggetti di una classe",
     answer: false,
     options: ['true', 'false'],
   },
   {
     id: 40,
-    question: "L'associazione nel modello di dominio rappresenta un’insieme di n-tuple di oggetti delle classi",
+    question:
+      "L'associazione nel modello di dominio rappresenta un’insieme di n-tuple di oggetti delle classi",
     answer: true,
     options: ['true', 'false'],
   },
@@ -362,7 +367,8 @@ export const QUESTIONS:Question[] = [
   },
   {
     id: 55,
-    question: 'Gli SSD mostrano gli eventi generati dagli attori esterni al sistema',
+    question:
+      'Gli SSD mostrano gli eventi generati dagli attori esterni al sistema',
     answer: true,
     options: ['true', 'false'],
   },
@@ -782,6 +788,45 @@ export const QUESTIONS:Question[] = [
     id: 116,
     question: 'I casi d’uso servono a catturare i requisiti funzionali',
     answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 117,
+    question:
+      'Si consideri la seguente associazione R tra a e B:',
+    subQuestion:'se A = {a1,a2,a3} e B = {b1,b2}, R può essere {(a1,b1),(a2,b2)}',
+    imgName: 'question_117_118_119_120.png',
+
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 118,
+    question:
+      'Si consideri la seguente associazione R tra a e B: ',
+    subQuestion:'se A = {a1,a2} e B = {b1,b2,b3}, R può essere {(a1,b1),(a2,b2),(a1,b2),(a2,b3)}',
+    imgName: 'question_117_118_119_120.png',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 119,
+    question:
+      'Si consideri la seguente associazione R tra a e B: ',
+    subQuestion:'se A = {a1,a2} e B = {b1,b2,b3}, R può essere {(a1,b1),(a1,b2),(a2,b3)}',
+    imgName: 'question_117_118_119_120.png',
+
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 120,
+    question:
+      'Si consideri la seguente associazione R tra a e B: ',
+    subQuestion:'se A = {a1,a2} e B = {b1,b2}, R può essere {(a1,b1),(a1,b2)}',
+    imgName: 'question_117_118_119_120.png',
+
+    answer: false,
     options: ['true', 'false'],
   },
 ];

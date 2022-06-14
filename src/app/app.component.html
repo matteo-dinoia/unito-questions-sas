@@ -11,6 +11,19 @@
       <div>
         <div class="question-title">{{ "Domanda #" + (index + 1) }}</div>
         <div class="question">{{ examRow.question.question }}</div>
+        <div
+          class="d-flex justify-content-center align-items-center"
+          *ngIf="examRow.question.imgName"
+        >
+          <img
+            class="img-fluid"
+            [src]="'../assets/img/questions/' + examRow.question.imgName"
+            [alt]="examRow.question.imgName"
+          />
+        </div>
+        <div *ngIf="examRow.question.subQuestion">
+          {{ examRow.question.subQuestion }}
+        </div>
       </div>
       <div class="d-flex justify-content-start align-items-center">
         <div>
