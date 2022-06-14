@@ -155,13 +155,6 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
-    id: 23,
-    question:
-      'Il modello di dominio include la definizione di oggetti, associazioni e attributi di classi software',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
     id: 24,
     question:
       'Il meccanismo di delega è preferibile al meccanismo di specializzazione per il riuso del codice',
@@ -230,8 +223,9 @@ export const QUESTIONS: Question[] = [
   {
     id: 35,
     question:
-      'In modello di dominio non è parte della disciplina dei requisiti',
-    answer: false,
+      'Il modello di dominio non è parte della disciplina dei requisiti',
+    answer: true,
+    answer_reason: 'fa parte della disciplina di modellazione del buisness',
     options: ['true', 'false'],
   },
   {
