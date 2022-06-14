@@ -6,7 +6,7 @@
   </div>
   <div></div>
   <ol class="mx-auto my-2">
-    <li *ngFor="let question of questions; let index = index">
+    <li *ngFor="let question of exam; let index = index">
       <hr />
       <div>
         <div class="question-title">{{ "Domanda #" + (index + 1) }}</div>
@@ -16,7 +16,7 @@
         <div>
           <select class="my-2" (change)="selectOption($event, question)">
             <option value="">Seleziona un valore</option>
-            <option [value]="b" *ngFor="let b of question.options">
+            <option [value]="b" *ngFor="let b of question.questions_options">
               {{ b | uppercase }}
             </option>
           </select>
@@ -24,7 +24,7 @@
         <div class="live-review" *ngIf="liveReview">
           <div
             class="text-success d-flex justify-content-center align-items-center"
-            *ngIf="exam[question.id].showCheckValidity.success"
+            *ngIf="question.showCheckValidity.success"
           >
             <div>
               <img
@@ -38,7 +38,7 @@
           </div>
           <div
             class="text-danger d-flex justify-content-center align-items-center"
-            *ngIf="exam[question.id].showCheckValidity.error"
+            *ngIf="question.showCheckValidity.error"
           >
             <div>
               <img

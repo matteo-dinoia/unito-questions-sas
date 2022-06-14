@@ -4,6 +4,8 @@ import { QUESTIONS } from './core/const/questions';
 class examRow {
   id!: number;
   answer: string = '';
+  question: any = QUESTIONS;
+  questions_options: any = [];
   selectedOption: string = '';
   isCorrect: boolean = false;
   showCheckValidity: any = {
@@ -15,6 +17,8 @@ class examRow {
     if (question) {
       this.id = question.id;
       this.answer = question.answer;
+      this.question = question.questions;
+      this.questions_options = question.options;
     }
   }
   update(selectedOption: any) {
@@ -55,14 +59,14 @@ export class AppComponent {
 
   selectOption(selectedOption: any, question: any) {
     selectedOption = selectedOption.target.value;
-
-    const questionIndex = this.exam.find((k) => k.id === question.id);
-    if (questionIndex) {
-      this.exam.forEach((exam) => {
-        if (exam.id === questionIndex.id) exam.update(selectedOption);
-      });
-    }
+    this.updateExamRow(selectedOption, question);
     this.setScorePoint();
+  }
+
+  private updateExamRow(selectedOption: any, question: any) {
+    this.exam.forEach((exam) => {
+      if (exam.id === question.id) exam.update(selectedOption);
+    });
   }
 
   resetExam() {
