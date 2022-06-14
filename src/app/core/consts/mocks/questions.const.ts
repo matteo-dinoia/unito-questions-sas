@@ -792,9 +792,9 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 117,
-    question:
-      'Si consideri la seguente associazione R tra a e B:',
-    subQuestion:'se A = {a1,a2,a3} e B = {b1,b2}, R può essere {(a1,b1),(a2,b2)}',
+    question: 'Si consideri la seguente associazione R tra a e B:',
+    subQuestion:
+      'se A = {a1,a2,a3} e B = {b1,b2}, R può essere {(a1,b1),(a2,b2)}',
     imgName: 'question_117_118_119_120.png',
 
     answer: false,
@@ -802,18 +802,18 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 118,
-    question:
-      'Si consideri la seguente associazione R tra a e B: ',
-    subQuestion:'se A = {a1,a2} e B = {b1,b2,b3}, R può essere {(a1,b1),(a2,b2),(a1,b2),(a2,b3)}',
+    question: 'Si consideri la seguente associazione R tra a e B: ',
+    subQuestion:
+      'se A = {a1,a2} e B = {b1,b2,b3}, R può essere {(a1,b1),(a2,b2),(a1,b2),(a2,b3)}',
     imgName: 'question_117_118_119_120.png',
     answer: false,
     options: ['true', 'false'],
   },
   {
     id: 119,
-    question:
-      'Si consideri la seguente associazione R tra a e B: ',
-    subQuestion:'se A = {a1,a2} e B = {b1,b2,b3}, R può essere {(a1,b1),(a1,b2),(a2,b3)}',
+    question: 'Si consideri la seguente associazione R tra a e B: ',
+    subQuestion:
+      'se A = {a1,a2} e B = {b1,b2,b3}, R può essere {(a1,b1),(a1,b2),(a2,b3)}',
     imgName: 'question_117_118_119_120.png',
 
     answer: true,
@@ -821,12 +821,171 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 120,
-    question:
-      'Si consideri la seguente associazione R tra a e B: ',
-    subQuestion:'se A = {a1,a2} e B = {b1,b2}, R può essere {(a1,b1),(a1,b2)}',
+    question: 'Si consideri la seguente associazione R tra a e B: ',
+    subQuestion: 'se A = {a1,a2} e B = {b1,b2}, R può essere {(a1,b1),(a1,b2)}',
     imgName: 'question_117_118_119_120.png',
 
     answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 121,
+    question:
+      'Si consideri l’associazione “Contained-in” nel seguente Modello di Dominio: ',
+    subQuestion:
+      'Una istanza di Sale deve essere distrutta prima di un’istanza di SalesLineItem',
+    imgName: 'question_121_to_126.png',
+    answer_reason:
+      'l’istanza Sale è l’intero ( il contenitore) e la parte è SalesLineItem. Dato che siamo in una composizione, la parte (SalesLineItem) non può esistere senza l’intero e quindi non posso distruggere l’istanza intero (Sale) prima di un’istanza parte. ',
+    answer: false,
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 122,
+    question:
+      'Si consideri l’associazione “Contained-in” nel seguente Modello di Dominio: ',
+    subQuestion:
+      'Una istanza di SalesLineItem deve essere distrutta prima di un’istanza di Sale.',
+    imgName: 'question_121_to_126.png',
+    answer: true,
+    answer_reason: 'è il contrario di quanto detto prima (domanda 122)',
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 123,
+    question:
+      'Si consideri l’associazione “Contained-in” nel seguente Modello di Dominio: ',
+    subQuestion:
+      'Le istanze di SalesLineItem appartengono ad una sola istanza di Sale alla volta.',
+    imgName: 'question_121_to_126.png',
+    answer: true,
+    answer_reason: 'data dalla cardinalità dell’associazione “contained-in” ',
+    options: ['true', 'false'],
+  },
+
+  {
+    id: 124,
+    question:
+      'Si consideri l’associazione “Contained-in” nel seguente Modello di Dominio: ',
+    subQuestion:
+      'Le istanze di Sale appartengono ad una sola istanza di SalesLineItem alla volta.',
+    imgName: 'question_121_to_126.png',
+    answer_reason:
+      'perché la cardinalità dell’associazione “contained-in” è 1..* ',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 125,
+    question:
+      'Si consideri l’associazione “Contained-in” nel seguente Modello di Dominio: ',
+    subQuestion:
+      'Una istanza di SalesLineItem pu`o essere creata dopo un’istanza di Sale.',
+    imgName: 'question_121_to_126.png',
+    answer: true,
+    answer_reason: 'per quanto detto in precedenza sulla composizione (domanda 122)',
+
+    options: ['true', 'false'],
+  },
+  {
+    id: 126,
+    question:
+      'Si consideri l’associazione “Contained-in” nel seguente Modello di Dominio: ',
+    subQuestion:
+      'Una istanza di Sale pu`o essere creata dopo un’istanza di SalesLineItem.',
+    imgName: 'question_121_to_126.png',
+    answer_reason: 'per quanto detto in precedenza sulla composizione (domanda 122)',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 127,
+    question:
+      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
+    subQuestion:
+      'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d2), (c2, d3), (c2, d4)}.',
+    imgName: 'question_127_to_130.png',
+    answer_reason: 'd2 è associato a 2 elementi di c (c1 e c2) e questo non va bene perché dev’essere associato solo ad un elemento di c per la cardinalità dell’associazione (1 --- 1..*)',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 128,
+    question:
+      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
+    subQuestion:
+      'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c2, d4)}.',
+    imgName: 'question_127_to_130.png',
+    answer_reason:'vengono rispettate le cardinalità',
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 129,
+    question:
+      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
+    subQuestion:
+      'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d3)}.',
+    imgName: 'question_127_to_130.png',
+    answer_reason: 'perché d3 non è associato a nessun elemento di c',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 130,
+    question:
+      'Si consideri il seguente Modello di Dominio: ',
+    subQuestion:
+      'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c1, d4)}.',
+    imgName: 'question_127_to_130.png',
+    answer_reason: 'perché c2 non è associato a nessun elemento di d',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 131,
+    question:
+      'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
+    subQuestion:
+      'R pu`o essere {(b1, a1), (b1, a2), (b2, a1)}.',
+    imgName: 'question_131_to_134.png',
+    answer_reason: 'perché a1 è associato a 2 elementi di b, quando invece la cardinalità è (0..1). ',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 132,
+    question:
+      'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
+    subQuestion:
+      'R pu`o essere {(b1, a1), (b1, a2), (b1, a3)}.',
+    imgName: 'question_131_to_134.png',
+    answer_reason: 'perché b2 non è associato a nessun elemento di a, quando invece la cardinalità è (1..3)',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 133,
+    question:
+      'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
+    subQuestion:
+      'R pu`o essere {(b1, a1), (b1, a2), (b1, a3), (b1, a4), (b2, a3)}.',
+    imgName: 'question_131_to_134.png',
+    answer_reason: 'perché a3 è associato a 2 elementi di b, quando invece la cardinalità è (0..1)',
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 134,
+    question:
+      'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
+    subQuestion:
+      'R pu`o essere {(b1, a1), (b1, a2), (b2, a3), (b2, a4)}.',
+    imgName: 'question_131_to_134.png',
+    answer_reason: 'tutto ok, le cardinalità sono rispettate',
+    answer: true,
     options: ['true', 'false'],
   },
 ];

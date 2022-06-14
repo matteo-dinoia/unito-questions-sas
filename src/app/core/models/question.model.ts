@@ -5,6 +5,7 @@ export interface Question {
   options: string[];
   imgName?: string;
   subQuestion?: string
+  answer_reason?: string
 }
 
 export class examRow {
