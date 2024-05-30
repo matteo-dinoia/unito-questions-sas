@@ -341,12 +341,6 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
-    id: 111,
-    question: 'I contratti servono come input per il modello di dominio',
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
     id: 113,
     question:
       'Le pre-condizioni descrivono i cambiamenti di stato degli oggetti nel modello di dominio dopo il completamento dell’operazione',
@@ -468,6 +462,13 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
+    id: 177,
+    question:
+      "DURANTE LA FASE DI ELABORAZIONE Si scrivono circa il 10% dei casi d'uso tra i piu critici in formato dettagliato utilizzando template appositi (caso d' uso dettagliato e strutturato)",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
     id: 47,
     question:
       'In UML per responsabilità si intende la specifica di un metodo associato ad una classe Java',
@@ -533,7 +534,7 @@ export const QUESTIONS: Question[] = [
   {
     id: 57,
     question:
-      'In percentuale sul totale dei requisiti funzionali di un progetto, quanti sono quelli che dovrebbero essere identificati entro la conclusione della fase di ideazione?? 50%',
+      'In percentuale sul totale dei requisiti funzionali di un progetto, quanti sono quelli che dovrebbero essere identificati entro la conclusione della fase di ideazione??',
     answer: '70%',
     options: ['5%', '50%', '70%', '100%'],
   },
@@ -1002,6 +1003,309 @@ export const QUESTIONS: Question[] = [
     imgName: 'question_131_to_134.png',
     answer_reason: 'tutto ok, le cardinalità sono rispettate',
     answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 135,
+    question:
+      "[Da qui le ho aggiunte io] Le pre-condizioni sono ipotesi significativi del sistema o degli oggetti del modello di progetto prima dell'esecuzione dell'operazione a cui è associata",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 136,
+    question:
+      "La post-condizione descrive i cambiamenti di stato degli oggetti nel Modello di Dominio dopo il completamento dell'operazione",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 137,
+    question:
+      "Le post-condizioni descrivono i cambiamenti nello stato degli oggetti del modello di progetto. I cambiamenti dello stato del modello di progetto comprendono oggetti creati, i collegamenti formati o rotti e attributi modificati",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 138,
+    question:
+      "La narrativa di un caso d'uso viene espressa a livello delle azioni concrete dell'utente edelle responsabilita del sistema",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 139,
+    question:
+      "Un caso d'uso è sempre completato in una sola iterazione",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 140,
+    question:
+      "La narrativa di un caso d'uso viene espressa a livello delle intenzioni dell'utente edelle responsabilita del sistema",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 141,
+    question:
+      "Un modello di dominio è la rappresentazione visuale degli oggetti software",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 142,
+    question:
+      "La disciplina dei requisiti è parte della fasi di ideazione",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 143,
+    question:
+      "La programmazione di qualità-produzione per un sottoinsieme dei requisiti si inizia dopo che I'analisi di tutti i requisiti sia stata completata",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 144,
+    question:
+      "Una sottoclasse è fortemente accoppiata alla sua superclasse",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 145,
+    question:
+      "Ricevere un parametro di tipo A per un metodo di una classe 8 rappresenta una relazione di dipendenza da B a A mentre estendere una classe A per una classe B non rappresenta una relazione di dipendenza da B a A.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 146,
+    question:
+      "E' possibile che due classi siano collegate da più di una assodazione",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 147,
+    question:
+      "[Relativamente agli SSD è vero che ] Sono espressi attraverso i diagrammi di comunicazione di UML",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 148,
+    question:
+      "[Relativamente agli SSD è vero che ] Mostrano l'ordine degli eventi generati dagli attori esterni al sistema.",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 149,
+    question:
+      "[Relativamente agli SSD è vero che ] I contratti costituiscono un input per gli SSD delle operazioni e per la progettazione degli oggetti.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 150,
+    question:
+      "[Relativamente agli SSD è vero che ] Un evento di sistema e un evento interno al sistema.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 151,
+    question:
+      "[Relativamente agli SSD è vero che ] Mostrano gli eventi generati dagli attori esterni al sistema.",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 152,
+    question:
+      "[Scegli pattern grasp] Chi crea un oggetto A? Ovvero, chi deve essere responsabile della creazione di una nuova istanza di una classe?",
+    answer: 'Creator',
+    options: ['Creator', 'High Coesion', 'Low Coupling', 'Expert', 'Controller'],
+  },
+  {
+    id: 153,
+    question:
+      "[Scegli pattern grasp] Qual e il primo oggetto oltre lo strato UI che riceve e coordina un' operazione di sistema?",
+    answer: 'Controller',
+    options: ['Creator', 'High Coesion', 'Low Coupling', 'Expert', 'Controller'],
+  },
+  {
+    id: 154,
+    question:
+      "[Scegli pattern grasp] Come mantenere gli oggetti focalizzati, comprensibili e gestibili e, come effetto collaterale, sostenere Low",
+    answer: 'High Coesion',
+    options: ['Creator', 'High Coesion', 'Low Coupling', 'Expert', 'Controller'],
+  },
+  {
+    id: 155,
+    question:
+      "[Scegli pattern grasp] Quale un principio di base, generale, per l'assegnazione di responsabilità agli oggetti?",
+    answer: 'Expert',
+    options: ['Creator', 'High Coesion', 'Low Coupling', 'Expert', 'Controller'],
+  },
+  {
+    id: 156,
+    question:
+      "[Scegli pattern grasp] Come ridurre l'impatto dei cambiamenti? Come sostenere una dipendenza bassa, un impatto dei cambiamenti basso e una maggiore opportunita di riuso?",
+    answer: 'Low Coupling',
+    options: ['Creator', 'High Coesion', 'Low Coupling', 'Expert', 'Controller'],
+  },
+  {
+    id: 157,
+    question:
+      "La disciplina dei requisiti è completata durante la fase dell'elaborazione",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 158,
+    question:
+      "La disciplina dei requisiti è completata durante la fase dell'ideazione",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 159,
+    question:
+      "La disciplina dei requisiti è iniziata durante l'ideazione",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 160,
+    question:
+      "Nei processi a cascata, l'analisi e la progettazione si basano sulla realizzazione di casi d'uso",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 161,
+    question:
+      "All'inizio del progetto vengono definiti in dettaglio tutti i requisiti relativi dai casi d'uso",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 162,
+    question:
+      "La fase di ideazione viene prima della fase di elaborazione. ",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 163,
+    question:
+      "la fase di ideazione vieni dopo ta fase di Costruzione.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 164,
+    question:
+      "La fase di ideazione è suddivisa in iterazioni.",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 165,
+    question:
+      "La fase di ideazione e una visione raffinata, implemenrazione ,iterariva del nucleo dell'architettura, risoluzione dei rischi maggiori, identificazione della maggior parte dei requisiti e della portata.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 166,
+    question:
+      "Il processo sviluppo incrementale e migliore rispetto al processo a cascata sotto ogni punto di vista e contesto di applicazione attuale.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 167,
+    question:
+      "II processo sviluppo incrementale e basata su uno svolgimento sequenziale delle diverse attività dello sviluppo software.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 168,
+    question:
+      "Il processo a cascata e migliore rispetto allo sviluppo incrementale sotto ogni punto di vista e contesto di applicazione attuale.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 169,
+    question:
+      "Lo sviluppo a cascata si basa sull'idea di sviluppare un'implementazione  iniziale, esporla agli utenti e perfezionarla attraverso molte  versioni.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 170,
+    question:
+      "In generale il Controller MVC delega le richieste di lavoro dall'utente al Controller GRASP del dominio",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 171,
+    question:
+      "II controller GRASP fa parte della UI e gestisce l'interazione con l'utente; la sua implementazione dipende in larga misura dalla tecnologia UI e dalla piattaforma che viene utilizzata.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 172,
+    question:
+      "Sia il Controller GRASP che il Controller MVC si occupano di gestire le richieste provenienti dall'utente.",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 173,
+    question:
+      "Durante l'elaborazione i documenti vengono abbozzati e definiti in maniera 'leggera'.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 174,
+    question:
+      "La pianificazione delle iterazioni e basata sul rischio, inizialmente vengono scelti i casi d'uso meno rischiosi.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 175,
+    question:
+      "L'ideazione è la prima iterazione dell'elaborazione.",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 175,
+    question:
+      "La maggior parte dei requisiti è individuata durante la fase di ideazione.",
+    answer: false,
+    answer_reason:
+      "La maggior parte degli UC è individuata durante la idealizzazione ma la maggior parte dei requisiti è individuata e stabilizzata durante l'elaborazione.",
+    options: ['true', 'false'],
+  },
+  {
+    id: 177,
+    question:
+      "Il modello dei casi d'uso viene iniziato durante l'elaborazione.",
+    answer: false,
     options: ['true', 'false'],
   },
 ];
