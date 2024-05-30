@@ -1009,7 +1009,8 @@ export const QUESTIONS: Question[] = [
     id: 135,
     question:
       "[Da qui le ho aggiunte io] Le pre-condizioni sono ipotesi significativi del sistema o degli oggetti del modello di progetto prima dell'esecuzione dell'operazione a cui è associata",
-    answer: true,
+    answer: false,
+    answer_reason: 'le ipotesi sono sul modello di dominio non di progetto',
     options: ['true', 'false'],
   },
   {
@@ -1078,7 +1079,7 @@ export const QUESTIONS: Question[] = [
   {
     id: 145,
     question:
-      "Ricevere un parametro di tipo A per un metodo di una classe 8 rappresenta una relazione di dipendenza da B a A mentre estendere una classe A per una classe B non rappresenta una relazione di dipendenza da B a A.",
+      "Ricevere un parametro di tipo A per un metodo di una classe B rappresenta una relazione di dipendenza da B a A mentre estendere una classe A per una classe B non rappresenta una relazione di dipendenza da B a A.",
     answer: false,
     options: ['true', 'false'],
   },
@@ -1164,6 +1165,7 @@ export const QUESTIONS: Question[] = [
     question:
       "La disciplina dei requisiti è completata durante la fase dell'elaborazione",
     answer: true,
+    answer_reason: "Non è detto che sia giusta (nessuno sa dirlo)",
     options: ['true', 'false'],
   },
   {
@@ -1204,7 +1206,7 @@ export const QUESTIONS: Question[] = [
   {
     id: 163,
     question:
-      "la fase di ideazione vieni dopo ta fase di Costruzione.",
+      "la fase di ideazione vieni dopo la fase di Costruzione.",
     answer: false,
     options: ['true', 'false'],
   },
@@ -1213,6 +1215,7 @@ export const QUESTIONS: Question[] = [
     question:
       "La fase di ideazione è suddivisa in iterazioni.",
     answer: true,
+    answer_reason: "normalmente ha una sola iterazione ma è comunque divisa in iterazioni",
     options: ['true', 'false'],
   },
   {
@@ -1293,7 +1296,7 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
-    id: 175,
+    id: 177,
     question:
       "La maggior parte dei requisiti è individuata durante la fase di ideazione.",
     answer: false,
@@ -1302,10 +1305,109 @@ export const QUESTIONS: Question[] = [
     options: ['true', 'false'],
   },
   {
-    id: 177,
+    id: 178,
     question:
       "Il modello dei casi d'uso viene iniziato durante l'elaborazione.",
     answer: false,
     options: ['true', 'false'],
   },
+  {
+    id: 179,
+    question:
+      "Durante la costruzione l'enfasi è maggiore sull'implementazione e minore sull'analisi dei requisiti.",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 181,
+    question:
+      "Quante iterazioni ha la fase di idealizzazione",
+    answer: 'normalmente una',
+    options: ['quante ne servono', 'normalmente una','dipende dalla percentuale dei casi d’uso che si intende implementare', 'non ha iterazioni'],
+  },
+  {
+    id: 182,
+    question:
+      "Cos’è il modello di dominio?",
+    answer: 'è una rappresentazione concettuale del sistema',
+    options: ['è un altro nome per indicare il modello di progetto', 'è una rappresentazione concettuale del sistema','è una rappresentazione implementativa del sistema', 'serve a rappresentare i casi d’uso in modo grafico'],
+  },
+  {
+    id: 183,
+    question:
+      "[Si fa il System Sequence Diagram (SSD)] quando si comincia a scrivere il codice",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 184,
+    question:
+      "[Si fa il System Sequence Diagram (SSD)] all’inizio dell’analisi dei requisiti",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 185,
+    question:
+      "[Si fa il System Sequence Diagram (SSD)] dopo i casi d’uso dettagliati",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 186,
+    question:
+      "[il System Sequence Diagram (SSD)] Non esiste questo diagramma in UP",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 187,
+    question:
+      "[ Quando si parla di regression testing o test di regressione?] quando si effettua dei test frequenti e non esaustivi relativi alle funzionalità principali, per decidere se il prodotto è sufficientemente stabile per essere testato da un team specializzato",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 188,
+    question:
+      "[ Quando si parla di regression testing o test di regressione?] quando si testano i componenti o le unità in ordine inverso rispetto a quando sono stati realizzati",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 189,
+    question:
+      "[ Quando si parla di regression testing o test di regressione?] quando si scrivono i test prima di avere implementato il codice",
+    answer: false,
+    options: ['true', 'false'],
+  },
+  {
+    id: 190,
+    question:
+      "[ Quando si parla di regression testing o test di regressione?]  Quando, a seguito della correzione di un bug o dell’integrazione di un nuovo componente, si vanno a ripetere i test già effettuati per verificare che le modifiche apportate non abbiano introdotto dei problemi nuovi o non rilevanti",
+    answer: true,
+    options: ['true', 'false'],
+  },
+  {
+    id: 191,
+    question:
+      "Quale de seguenti NON è una delle tante forme di riuso dell'ingegneria del software?",
+    answer: 'pattern matching',
+    options: ['framework', 'design pattern', 'pattern matching', 'librerie'],
+  },
+  {
+    id: 192,
+    question:
+      "Quali dei seguenti ruoli non è previsto dal metodo SCRUM di gestione dei progetti Agili?",
+    answer: 'Tester',
+    options: ['Scrum Master', 'Project manager', 'Developer', 'Tester'],
+  },
+  {
+    id: 193,
+    question:
+      " Dire quale NON è un pattern GoF.",
+    answer: 'Factory',
+    options: ['Abstract Factory', 'Proxy', 'Factory', 'Composite'],
+  },
+
 ];
