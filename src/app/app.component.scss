@@ -14,7 +14,10 @@
 
 
 .my-header{ text-align: center; }
-.my-header h1{ font-size: 4em; }
+.my-header h1{ 
+  font-size: 4em;
+  color: var(--primary);
+}
 
 @media (max-width: 720px) {
   .my-header h1{ font-size: 2em; }
@@ -27,6 +30,7 @@
 .bar{ 
   max-width: 720px;
   margin: 0px auto;
+  background-color: var(--primary);
 }
 
 .no-num-list{

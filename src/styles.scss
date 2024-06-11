@@ -3,10 +3,23 @@
 html, body { height: 100%; }
 body { 
     margin: 0; 
-    background-color: var(--bg);
 }
 
 :root {
-    --text: black;
-    --bg: white;
+    --primary: darkslategray;
+    color-scheme: light dark; 
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color: black;
+        background-color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: #252628;
+    }
 }
