@@ -9,7 +9,7 @@ import { examRow, Question } from './core/models/question.model';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  questions: Question[] = QUESTIONS;
+  
   scorePoint: number = 0;
   exam: examRow[] = [];
 
@@ -21,18 +21,17 @@ export class AppComponent {
   }
 
   private initExam() {
-    this.questions.forEach((question, index) => this.exam.push(new examRow(question, index)));
+    QUESTIONS.forEach((question) => this.exam.push(new examRow(question)));
   }
 
   private updateExamRow(selectedOption: any, rowId: number) {
-    this.exam.forEach((exam) => {
-      if (exam.id === rowId) exam.update(selectedOption);
-    });
+    const row = this.exam[rowId];
+    if(row) row.update(selectedOption);
   }
 
-  selectOption(selectedOption: any, row: examRow) {
+  selectOption(selectedOption: any, rowId: number) {
     selectedOption = selectedOption.target.value;
-    this.updateExamRow(selectedOption, row.id);
+    this.updateExamRow(selectedOption, rowId);
     this.setScorePoint();
   }
 

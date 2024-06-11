@@ -8,7 +8,6 @@ export interface Question {
 }
 
 export class examRow {
-  id!: number;
   question!: Question;
   answer: string | boolean = '';
   questions_options: any = [];
@@ -19,9 +18,8 @@ export class examRow {
     success: false,
   };
 
-  constructor(question: Question, id: number) {
+  constructor(question: Question) {
     if (question) {
-      this.id = id;
       this.answer = question.answer;
       this.question = question;
     }
