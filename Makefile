@@ -1,5 +1,5 @@
 
-default: dev-env
+default: dev
 dev:
 	ng serve
 
