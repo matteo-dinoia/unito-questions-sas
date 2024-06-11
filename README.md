@@ -16,6 +16,6 @@ Run `make test` which run `ng test` to execute the unit tests via [Karma](https:
 
 ## Contributing
 
-You can contribute by adding question which is done by editing the  file.
+You can contribute by adding question which is done by editing the [src/app/core/consts/mocks/questions.const.ts](https://github.com/matteo-dinoia/unito-questions-sas/blob/main/src/app/core/consts/mocks/questions.const.ts) file.
 
-You can also add images which must be stored in .
+You can also add images which must be stored in [src/assets/img/questions](https://github.com/matteo-dinoia/unito-questions-sas/tree/main/src/assets/img/questions) folder.
