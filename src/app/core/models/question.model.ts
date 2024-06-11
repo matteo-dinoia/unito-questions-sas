@@ -1,5 +1,4 @@
 export interface Question {
-  id: number;
   question: string;
   answer: boolean | string;
   options: string[];
@@ -20,9 +19,9 @@ export class examRow {
     success: false,
   };
 
-  constructor(question: Question) {
+  constructor(question: Question, id: number) {
     if (question) {
-      this.id = question.id;
+      this.id = id;
       this.answer = question.answer;
       this.question = question;
     }

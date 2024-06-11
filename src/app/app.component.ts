@@ -21,18 +21,18 @@ export class AppComponent {
   }
 
   private initExam() {
-    this.questions.forEach((question) => this.exam.push(new examRow(question)));
+    this.questions.forEach((question, index) => this.exam.push(new examRow(question, index)));
   }
 
-  private updateExamRow(selectedOption: any, question: Question) {
+  private updateExamRow(selectedOption: any, rowId: number) {
     this.exam.forEach((exam) => {
-      if (exam.id === question.id) exam.update(selectedOption);
+      if (exam.id === rowId) exam.update(selectedOption);
     });
   }
 
-  selectOption(selectedOption: any, emaxRow: examRow) {
+  selectOption(selectedOption: any, row: examRow) {
     selectedOption = selectedOption.target.value;
-    this.updateExamRow(selectedOption, emaxRow.question);
+    this.updateExamRow(selectedOption, row.id);
     this.setScorePoint();
   }
 
