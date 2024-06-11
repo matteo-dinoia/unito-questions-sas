@@ -104,41 +104,23 @@
 </div>
 <div class="container fixed-bottom">
   <div class="mb-3 w-100 bg-dark round">
-    <div class="d-flex justify-content-center align-items-center">
-      <div class="col-md-4 text-white">
-        <div class="text-end w-100 px-3 py-2" *ngIf="showPoints">
-          <span class="fw-bold me-3 my-2">Punteggio:</span>
-          <span class="my-2">{{
-            scorePoint + "/ " + this.exam.length
-          }}</span>
-        </div>
-      </div>
-    </div>
     <div class="d-flex justify-content-between align-items-center px-3 py-2">
       <div class="">
         <div class="d-flex justify-content-start align-items-center">
           <div
             class="d-flex flex-column align-items-start justify-content-between"
           >
-            <mat-slide-toggle
-              color="success"
-              [(ngModel)]="showPoints"
-              (toggleChange)="showPoints = !showPoints"
-              class="d-flex justify-content-center align-items-center mx-3 my-1"
-            >
-              <div class="d-flex justify-content-center align-items-center">
-                <span class="text-white my-auto mx-2"> Punteggio Totale </span>
-                <span
-                  class="fw-bold"
-                  [ngClass]="{
-                    'text-success': showPoints,
-                    'text-danger': !showPoints
-                  }"
-                >
-                  {{ showPoints ? "ON" : "FALSE" }}</span
-                >
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="col-md-4 text-white">
+                <div class="text-end w-100 px-3 py-2"  >
+                  <span class="fw-bold me-3 my-2">Punteggio:</span>
+                  <span class="my-2">{{
+                    !liveReview ? "nascosto"
+                      : (scorePoint + " / " + this.exam.length) 
+                  }}</span>
+                </div>
               </div>
-            </mat-slide-toggle>
+            </div>
             <mat-slide-toggle
               color="success"
               [(ngModel)]="liveReview"
@@ -153,7 +135,7 @@
                   'text-danger': !liveReview
                 }"
               >
-                {{ liveReview ? "ON" : "FALSE" }}</span
+                {{ liveReview ? "ON" : "OFF" }}</span
               >
             </mat-slide-toggle>
           </div>
