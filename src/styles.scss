@@ -23,4 +23,8 @@ body {
         --bg: #252628;
         --primary: darkslategray;
     }
+
+    .icon-recolor{
+        filter: invert(100%)
+    }
 }
