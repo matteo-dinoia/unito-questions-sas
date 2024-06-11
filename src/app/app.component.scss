@@ -16,14 +16,9 @@
   color: #ffffff;
 }
 
-.my-header h1{
-  font-size: 4em;
-}
+.my-header{ text-align: center; }
+.my-header h1{ font-size: 4em; }
 
-.my-header{
-  text-align: center;
-}
+.subpoint{ list-style-type: upper-latin; }
 
-.subpoint{
- list-style-type: upper-latin;
-}
+.round{ border-radius: 6px; }
