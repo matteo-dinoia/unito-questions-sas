@@ -717,6 +717,7 @@ export const QUESTIONS: Question[] = [
     question:
       'Una classe con accoppiamento alto fa molte cose non correlate tra loro e svolte troppo lavoro',
     answer: false,
+    answer_reason: "Questo è coesione bassa non alto accoppiamento",
     options: ['true', 'false'],
   },
   {
@@ -1086,42 +1087,7 @@ export const QUESTIONS: Question[] = [
   {
     id: 146,
     question:
-      "E' possibile che due classi siano collegate da più di una assodazione",
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 147,
-    question:
-      "[Relativamente agli SSD è vero che ] Sono espressi attraverso i diagrammi di comunicazione di UML",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 148,
-    question:
-      "[Relativamente agli SSD è vero che ] Mostrano l'ordine degli eventi generati dagli attori esterni al sistema.",
-    answer: true,
-    options: ['true', 'false'],
-  },
-  {
-    id: 149,
-    question:
-      "[Relativamente agli SSD è vero che ] I contratti costituiscono un input per gli SSD delle operazioni e per la progettazione degli oggetti.",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 150,
-    question:
-      "[Relativamente agli SSD è vero che ] Un evento di sistema e un evento interno al sistema.",
-    answer: false,
-    options: ['true', 'false'],
-  },
-  {
-    id: 151,
-    question:
-      "[Relativamente agli SSD è vero che ] Mostrano gli eventi generati dagli attori esterni al sistema.",
+      "E' possibile che due classi siano collegate da più di una associazione",
     answer: true,
     options: ['true', 'false'],
   },
@@ -1407,6 +1373,7 @@ export const QUESTIONS: Question[] = [
     question:
       " Dire quale NON è un pattern GoF.",
     answer: 'Factory',
+    answer_reason: "Esistono tutti ma nelle domande scorse era segnato giusto Factory",
     options: ['Abstract Factory', 'Proxy', 'Factory', 'Composite'],
   },
 
