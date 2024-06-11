@@ -1,25 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { 
-    margin: 0; 
-}
-
-:root {
-    --primary: darkslategray;
-    color-scheme: light dark; 
+:root { color-scheme: light dark;  }
+body {
+    margin: 0;
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        color: black;
-        background-color: white;
+    :root{
+        --text: black;
+        --bg: white;
+        --primary: cadetblue;
     }
+    
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        color: white;
-        background-color: #252628;
+    :root {
+        --text: white;
+        --bg: #252628;
+        --primary: darkslategray;
     }
 }

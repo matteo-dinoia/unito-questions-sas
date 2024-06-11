@@ -17,6 +17,9 @@
 .my-header h1{ 
   font-size: 4em;
   color: var(--primary);
+  
+  text-shadow: 2px 0 var(--text), -2px 0 var(--text), 0 2px var(--text), 0 -2px var(--text),
+      1px 1px var(--text), -1px -1px var(--text), 1px -1px var(--text), -1px 1px var(--text);
 }
 
 @media (max-width: 720px) {
