@@ -6,7 +6,7 @@
 
 .questions-body {
   margin-top: 4vh;
-  padding-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .material-icons.color_green {
@@ -16,6 +16,14 @@
   color: #ffffff;
 }
 
-h1{
+.my-header h1{
   font-size: 4em;
+}
+
+.my-header{
+  text-align: center;
+}
+
+.subpoint{
+ list-style-type: upper-latin;
 }

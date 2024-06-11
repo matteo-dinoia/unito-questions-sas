@@ -1,10 +1,11 @@
 export interface Question {
   question: string;
-  answer: boolean | string;
-  options: string[];
   imgName?: string;
-  subQuestion?: string
-  answer_reason?: string
+  subQuestion?: string;
+  points?: string[];
+  options: string[];
+  answer: boolean | string;
+  answerReason?: string;
 }
 
 export class examRow {

@@ -31,7 +31,7 @@ export const QUESTIONS: Question[] = [
     question:
       'Il modello di dominio non è parte della disciplina dei requisiti',
     answer: true,
-    answer_reason: 'fa parte della disciplina di modellazione del buisness',
+    answerReason: 'fa parte della disciplina di modellazione del buisness',
     options: ['true', 'false'],
   },
   {
@@ -615,7 +615,7 @@ export const QUESTIONS: Question[] = [
     question:
       'Una classe con accoppiamento alto fa molte cose non correlate tra loro e svolte troppo lavoro',
     answer: false,
-    answer_reason: "Questo è coesione bassa non alto accoppiamento",
+    answerReason: "Questo è coesione bassa non alto accoppiamento",
     options: ['true', 'false'],
   },
   {
@@ -733,7 +733,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Una istanza di Sale deve essere distrutta prima di un’istanza di SalesLineItem',
     imgName: 'question_121_to_126.png',
-    answer_reason:
+    answerReason:
       'l’istanza Sale è l’intero ( il contenitore) e la parte è SalesLineItem. Dato che siamo in una composizione, la parte (SalesLineItem) non può esistere senza l’intero e quindi non posso distruggere l’istanza intero (Sale) prima di un’istanza parte. ',
     answer: false,
     options: ['true', 'false'],
@@ -746,7 +746,7 @@ export const QUESTIONS: Question[] = [
       'Una istanza di SalesLineItem deve essere distrutta prima di un’istanza di Sale.',
     imgName: 'question_121_to_126.png',
     answer: true,
-    answer_reason: 'è il contrario di quanto detto prima (domanda 122)',
+    answerReason: 'è il contrario di quanto detto prima (domanda 122)',
     options: ['true', 'false'],
   },
 
@@ -757,7 +757,7 @@ export const QUESTIONS: Question[] = [
       'Le istanze di SalesLineItem appartengono ad una sola istanza di Sale alla volta.',
     imgName: 'question_121_to_126.png',
     answer: true,
-    answer_reason: 'data dalla cardinalità dell’associazione “contained-in” ',
+    answerReason: 'data dalla cardinalità dell’associazione “contained-in” ',
     options: ['true', 'false'],
   },
 
@@ -767,7 +767,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Le istanze di Sale appartengono ad una sola istanza di SalesLineItem alla volta.',
     imgName: 'question_121_to_126.png',
-    answer_reason:
+    answerReason:
       'perché la cardinalità dell’associazione “contained-in” è 1..* ',
     answer: false,
     options: ['true', 'false'],
@@ -779,7 +779,7 @@ export const QUESTIONS: Question[] = [
       'Una istanza di SalesLineItem pu`o essere creata dopo un’istanza di Sale.',
     imgName: 'question_121_to_126.png',
     answer: true,
-    answer_reason:
+    answerReason:
       'per quanto detto in precedenza sulla composizione (domanda 122)',
 
     options: ['true', 'false'],
@@ -790,7 +790,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Una istanza di Sale pu`o essere creata dopo un’istanza di SalesLineItem.',
     imgName: 'question_121_to_126.png',
-    answer_reason:
+    answerReason:
       'per quanto detto in precedenza sulla composizione (domanda 122)',
     answer: false,
     options: ['true', 'false'],
@@ -801,7 +801,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d2), (c2, d3), (c2, d4)}.',
     imgName: 'question_127_to_130.png',
-    answer_reason:
+    answerReason:
       'd2 è associato a 2 elementi di c (c1 e c2) e questo non va bene perché dev’essere associato solo ad un elemento di c per la cardinalità dell’associazione (1 --- 1..*)',
     answer: false,
     options: ['true', 'false'],
@@ -812,7 +812,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c2, d4)}.',
     imgName: 'question_127_to_130.png',
-    answer_reason: 'vengono rispettate le cardinalità',
+    answerReason: 'vengono rispettate le cardinalità',
     answer: true,
     options: ['true', 'false'],
   },
@@ -821,7 +821,7 @@ export const QUESTIONS: Question[] = [
       'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
     subQuestion: 'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d3)}.',
     imgName: 'question_127_to_130.png',
-    answer_reason: 'perché d3 non è associato a nessun elemento di c',
+    answerReason: 'perché d3 non è associato a nessun elemento di c',
     answer: false,
     options: ['true', 'false'],
   },
@@ -830,7 +830,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c1, d4)}.',
     imgName: 'question_127_to_130.png',
-    answer_reason: 'perché c2 non è associato a nessun elemento di d',
+    answerReason: 'perché c2 non è associato a nessun elemento di d',
     answer: false,
     options: ['true', 'false'],
   },
@@ -839,7 +839,7 @@ export const QUESTIONS: Question[] = [
       'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
     subQuestion: 'R pu`o essere {(b1, a1), (b1, a2), (b2, a1)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason:
+    answerReason:
       'perché a1 è associato a 2 elementi di b, quando invece la cardinalità è (0..1). ',
     answer: false,
     options: ['true', 'false'],
@@ -849,7 +849,7 @@ export const QUESTIONS: Question[] = [
       'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
     subQuestion: 'R pu`o essere {(b1, a1), (b1, a2), (b1, a3)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason:
+    answerReason:
       'perché b2 non è associato a nessun elemento di a, quando invece la cardinalità è (1..3)',
     answer: false,
     options: ['true', 'false'],
@@ -860,7 +860,7 @@ export const QUESTIONS: Question[] = [
     subQuestion:
       'R pu`o essere {(b1, a1), (b1, a2), (b1, a3), (b1, a4), (b2, a3)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason:
+    answerReason:
       'perché a3 è associato a 2 elementi di b, quando invece la cardinalità è (0..1)',
     answer: false,
     options: ['true', 'false'],
@@ -870,7 +870,7 @@ export const QUESTIONS: Question[] = [
       'Si consideri il diagramma seguente e Si supponga A = {a1, a2, a3, a4} e B = {b1, b2}.',
     subQuestion: 'R pu`o essere {(b1, a1), (b1, a2), (b2, a3), (b2, a4)}.',
     imgName: 'question_131_to_134.png',
-    answer_reason: 'tutto ok, le cardinalità sono rispettate',
+    answerReason: 'tutto ok, le cardinalità sono rispettate',
     answer: true,
     options: ['true', 'false'],
   },
@@ -878,7 +878,7 @@ export const QUESTIONS: Question[] = [
     question:
       "[Da qui le ho aggiunte io] Le pre-condizioni sono ipotesi significativi del sistema o degli oggetti del modello di progetto prima dell'esecuzione dell'operazione a cui è associata",
     answer: false,
-    answer_reason: 'le ipotesi sono sul modello di dominio non di progetto',
+    answerReason: 'le ipotesi sono sul modello di dominio non di progetto',
     options: ['true', 'false'],
   },
   {
@@ -981,7 +981,7 @@ export const QUESTIONS: Question[] = [
     question:
       "La disciplina dei requisiti è completata durante la fase dell'elaborazione",
     answer: true,
-    answer_reason: "Non è detto che sia giusta (nessuno sa dirlo)",
+    answerReason: "Non è detto che sia giusta (nessuno sa dirlo)",
     options: ['true', 'false'],
   },
   {
@@ -1024,7 +1024,7 @@ export const QUESTIONS: Question[] = [
     question:
       "La fase di ideazione è suddivisa in iterazioni.",
     answer: true,
-    answer_reason: "normalmente ha una sola iterazione ma è comunque divisa in iterazioni",
+    answerReason: "normalmente ha una sola iterazione ma è comunque divisa in iterazioni",
     options: ['true', 'false'],
   },
   {
@@ -1097,7 +1097,7 @@ export const QUESTIONS: Question[] = [
     question:
       "La maggior parte dei requisiti è individuata durante la fase di ideazione.",
     answer: false,
-    answer_reason:
+    answerReason:
       "La maggior parte degli UC è individuata durante la idealizzazione ma la maggior parte dei requisiti è individuata e stabilizzata durante l'elaborazione.",
     options: ['true', 'false'],
   },
@@ -1115,15 +1115,17 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "Quante iterazioni ha la fase di idealizzazione",
-    answer: 'normalmente una',
-    options: ['quante ne servono', 'normalmente una','dipende dalla percentuale dei casi d’uso che si intende implementare', 'non ha iterazioni'],
+      "Quante iterazioni ha la fase di idealizzazione: ADDIO",
+    points: ['quante ne servono', 'normalmente una','dipende dalla percentuale dei casi d’uso che si intende implementare', 'non ha iterazioni'],
+    answer: 'B',
+    options: ['A', 'B', 'C', 'D'],
   },
   {
     question:
       "Cos’è il modello di dominio?",
-    answer: 'è una rappresentazione concettuale del sistema',
-    options: ['è un altro nome per indicare il modello di progetto', 'è una rappresentazione concettuale del sistema','è una rappresentazione implementativa del sistema', 'serve a rappresentare i casi d’uso in modo grafico'],
+    points: ['è una rappresentazione concettuale del sistema','è un altro nome per indicare il modello di progetto','è una rappresentazione implementativa del sistema', 'serve a rappresentare i casi d’uso in modo grafico'],
+    answer: 'A',
+    options: ['A', 'B','C', 'D'],
   },
   {
     question:
@@ -1189,7 +1191,7 @@ export const QUESTIONS: Question[] = [
     question:
       " Dire quale NON è un pattern GoF.",
     answer: 'Factory',
-    answer_reason: "Esistono tutti ma nelle domande scorse era segnato giusto Factory",
+    answerReason: "Esistono tutti ma nelle domande scorse era segnato giusto Factory",
     options: ['Abstract Factory', 'Proxy', 'Factory', 'Composite'],
   },
 
