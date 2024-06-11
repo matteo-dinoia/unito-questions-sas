@@ -5,20 +5,17 @@
 }
 
 .questions-body {
-  margin-top: 4vh;
-  margin-bottom: 10rem;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 6px;
+  margin: 4vh auto 10rem auto;
   color: var(--text);
 }
 
-.material-icons.color_green {
-  color: #00ff00;
-}
-.material-icons.color_white {
-  color: #ffffff;
-}
 
 .my-header{ text-align: center; }
 .my-header h1{ font-size: 4em; }
+
 @media (max-width: 720px) {
   .my-header h1{ font-size: 2em; }
 }
@@ -31,4 +28,10 @@
   max-width: 720px;
   margin: 0px auto;
 }
+
+.no-num-list{
+  list-style: none;
+  padding: 0px;
+}
+
 
