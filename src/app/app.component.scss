@@ -19,8 +19,16 @@
 
 .my-header{ text-align: center; }
 .my-header h1{ font-size: 4em; }
+@media (max-width: 720px) {
+  .my-header h1{ font-size: 2em; }
+}
 
 .subpoint{ list-style-type: upper-latin; }
 
 .round{ border-radius: 6px; }
+
+.bar{ 
+  max-width: 720px;
+  margin: 0px auto;
+}
 
