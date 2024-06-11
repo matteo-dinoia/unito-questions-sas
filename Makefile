@@ -1,6 +1,6 @@
 
 default: dev-env
-dev-env:
+dev:
 	ng serve
 
 release:

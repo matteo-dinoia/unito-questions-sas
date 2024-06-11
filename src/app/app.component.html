@@ -1,9 +1,16 @@
 <div class="container questions-body">
   <div class="d-flex justify-content-center align-items-center">
-    <h1 class="my-auto text-danger fw-bold">
-      {{ "Questionario esami sas" | uppercase }}
+    <h1 class="text-danger fw-bold">
+      QUESTIONARIO ESAMI
     </h1>
   </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <p>
+      Puoi contribuire aggiungendo domande sequendo le istruzioni a pagina
+      <a href="https://github.com/matteo-dinoia/unito-questions-sas/">github.com/matteo-dinoia/unito-questions-sas/</a>
+    </p>
+  </div>
+
   <div></div>
   <ol class="mx-auto my-2">
     <li *ngFor="let examRow of exam; let index = index">
