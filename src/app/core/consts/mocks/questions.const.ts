@@ -1115,7 +1115,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "Quante iterazioni ha la fase di idealizzazione: ADDIO",
+      "Quante iterazioni ha la fase di idealizzazione:",
     points: ['quante ne servono', 'normalmente una','dipende dalla percentuale dei casi d’uso che si intende implementare', 'non ha iterazioni'],
     answer: 'B',
     options: ['A', 'B', 'C', 'D'],
