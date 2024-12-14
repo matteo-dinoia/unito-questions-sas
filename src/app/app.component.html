@@ -97,6 +97,16 @@
           <div>
             {{ examRow.question.answerReason }}
           </div>
+          <div
+            class="d-flex justify-content-center align-items-center"
+            *ngIf="examRow.question.answerImg"
+          >
+            <img
+              class="img-fluid"
+              [src]="'assets/img/questions/' + examRow.question.answerImg"
+              [alt]="examRow.question.answerImg"
+            />
+          </div>
         </div>
       </div>
     </li>

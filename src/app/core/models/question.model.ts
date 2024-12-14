@@ -6,6 +6,7 @@ export interface Question {
   options: string[];
   answer: boolean | string;
   answerReason?: string;
+  answerImg?: string;
 }
 
 export class examRow {
