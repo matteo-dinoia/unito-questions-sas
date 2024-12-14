@@ -981,7 +981,8 @@ export const QUESTIONS: Question[] = [
     question:
       "La disciplina dei requisiti è completata durante la fase dell'elaborazione",
     answer: true,
-    answerReason: "Non è detto che sia giusta (nessuno sa dirlo)",
+    answerReason: "Come dalla foto, pare sia vero. (Non è detto che sia giusta)",
+    answerImg: "question_response_150.png",
     options: ['true', 'false'],
   },
   {
