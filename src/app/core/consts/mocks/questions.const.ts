@@ -632,7 +632,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      'Il refactorin è un metodo strutturato e disciplinato per scrivere o ristrutturare del codice esistente',
+      'Il refactoring è un metodo strutturato e disciplinato per scrivere o ristrutturare del codice esistente',
     answer: true,
     options: ['true', 'false'],
   },
@@ -818,15 +818,15 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
+      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}.',
     subQuestion: 'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d3)}.',
     imgName: 'question_127_to_130.png',
-    answerReason: 'perché d3 non è associato a nessun elemento di c',
+    answerReason: 'perché d4 non è associato a nessun elemento di c',
     answer: false,
     options: ['true', 'false'],
   },
   {
-    question: 'Si consideri il seguente Modello di Dominio: ',
+    question: 'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}.',
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c1, d4)}.',
     imgName: 'question_127_to_130.png',
