@@ -1017,7 +1017,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "la fase di ideazione vieni dopo la fase di Costruzione.",
+      "la fase di ideazione viene dopo la fase di Costruzione.",
     answer: false,
     options: ['true', 'false'],
   },
@@ -1030,25 +1030,25 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "La fase di ideazione e una visione raffinata, implemenrazione ,iterariva del nucleo dell'architettura, risoluzione dei rischi maggiori, identificazione della maggior parte dei requisiti e della portata.",
+      "La fase di ideazione è una visione raffinata, implementazione ,iterativa del nucleo dell'architettura, risoluzione dei rischi maggiori, identificazione della maggior parte dei requisiti e della portata.",
     answer: false,
     options: ['true', 'false'],
   },
   {
     question:
-      "Il processo sviluppo incrementale e migliore rispetto al processo a cascata sotto ogni punto di vista e contesto di applicazione attuale.",
+      "Il processo sviluppo incrementale è migliore rispetto al processo a cascata sotto ogni punto di vista e contesto di applicazione attuale.",
     answer: false,
     options: ['true', 'false'],
   },
   {
     question:
-      "II processo sviluppo incrementale e basata su uno svolgimento sequenziale delle diverse attività dello sviluppo software.",
+      "II processo sviluppo incrementale è basato su uno svolgimento sequenziale delle diverse attività dello sviluppo software.",
     answer: false,
     options: ['true', 'false'],
   },
   {
     question:
-      "Il processo a cascata e migliore rispetto allo sviluppo incrementale sotto ogni punto di vista e contesto di applicazione attuale.",
+      "Il processo a cascata è migliore rispetto allo sviluppo incrementale sotto ogni punto di vista e contesto di applicazione attuale.",
     answer: false,
     options: ['true', 'false'],
   },
