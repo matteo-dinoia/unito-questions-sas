@@ -632,7 +632,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      'Il refactorin è un metodo strutturato e disciplinato per scrivere o ristrutturare del codice esistente',
+      'Il refactoring è un metodo strutturato e disciplinato per scrivere o ristrutturare del codice esistente',
     answer: true,
     options: ['true', 'false'],
   },
@@ -818,15 +818,15 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}. ',
+      'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}.',
     subQuestion: 'Contains pu`o essere {(c1, d1), (c1, d2), (c2, d3)}.',
     imgName: 'question_127_to_130.png',
-    answerReason: 'perché d3 non è associato a nessun elemento di c',
+    answerReason: 'perché d4 non è associato a nessun elemento di c',
     answer: false,
     options: ['true', 'false'],
   },
   {
-    question: 'Si consideri il seguente Modello di Dominio: ',
+    question: 'Si consideri il seguente Modello di Dominio: Si supponga Product Catalog = {c1, c2} e Product Description = {d1, d2, d3, d4}.',
     subQuestion:
       'Contains pu`o essere {(c1, d1), (c1, d2), (c1, d3), (c1, d4)}.',
     imgName: 'question_127_to_130.png',
@@ -981,7 +981,8 @@ export const QUESTIONS: Question[] = [
     question:
       "La disciplina dei requisiti è completata durante la fase dell'elaborazione",
     answer: true,
-    answerReason: "Non è detto che sia giusta (nessuno sa dirlo)",
+    answerReason: "Come dalla foto, pare sia vero. (Non è detto che sia giusta)",
+    answerImg: "question_response_150.png",
     options: ['true', 'false'],
   },
   {
@@ -1016,7 +1017,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "la fase di ideazione vieni dopo la fase di Costruzione.",
+      "la fase di ideazione viene dopo la fase di Costruzione.",
     answer: false,
     options: ['true', 'false'],
   },
@@ -1029,25 +1030,25 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "La fase di ideazione e una visione raffinata, implemenrazione ,iterariva del nucleo dell'architettura, risoluzione dei rischi maggiori, identificazione della maggior parte dei requisiti e della portata.",
+      "La fase di ideazione è una visione raffinata, implementazione ,iterativa del nucleo dell'architettura, risoluzione dei rischi maggiori, identificazione della maggior parte dei requisiti e della portata.",
     answer: false,
     options: ['true', 'false'],
   },
   {
     question:
-      "Il processo sviluppo incrementale e migliore rispetto al processo a cascata sotto ogni punto di vista e contesto di applicazione attuale.",
+      "Il processo sviluppo incrementale è migliore rispetto al processo a cascata sotto ogni punto di vista e contesto di applicazione attuale.",
     answer: false,
     options: ['true', 'false'],
   },
   {
     question:
-      "II processo sviluppo incrementale e basata su uno svolgimento sequenziale delle diverse attività dello sviluppo software.",
+      "II processo sviluppo incrementale è basato su uno svolgimento sequenziale delle diverse attività dello sviluppo software.",
     answer: false,
     options: ['true', 'false'],
   },
   {
     question:
-      "Il processo a cascata e migliore rispetto allo sviluppo incrementale sotto ogni punto di vista e contesto di applicazione attuale.",
+      "Il processo a cascata è migliore rispetto allo sviluppo incrementale sotto ogni punto di vista e contesto di applicazione attuale.",
     answer: false,
     options: ['true', 'false'],
   },
